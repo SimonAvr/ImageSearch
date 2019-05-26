@@ -1,0 +1,14 @@
+<a href="{{ url_for('index') }}">Back</a><p>
+
+{% for file_url in file_urls %}
+    <center>
+
+        <h3>Main Image</h3>
+        <img  style="height: 400px" src="{{ file_url }}">
+    <h3>Main Color</h3>
+        <img  style="height: 70px" src="{{ main_color }}">
+    <h3>Palette of colors</h3>
+        <img  style="height: 50px" src="{{ pallete }}">
+
+    </center>
+{% endfor %}
